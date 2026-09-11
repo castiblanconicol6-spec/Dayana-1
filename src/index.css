@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Maximum Voltage';
+  src: url('/fonts/MaximumVoltage.ttf') format('truetype'),
+       url('/fonts/MaximumVoltage.otf') format('opentype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Maximum Voltage';
+  src: url('/fonts/Maximum Voltage Italic.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #ff6a00;
+    color: #ffffff;
+  }
+}
+
+.font-max-voltage {
+  font-family: 'Maximum Voltage', 'Orbitron', 'Chakra Petch', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.font-display {
+  font-family: 'Chakra Petch', 'Orbitron', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-title {
+  font-family: 'Orbitron', 'Chakra Petch', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.font-mono-tech {
+  font-family: 'Share Tech Mono', monospace;
+  letter-spacing: 0.04em;
+}
+
+.text-portfolio-orange {
+  color: #ff6a00;
+}
+
+.bg-portfolio-orange {
+  background-color: #ff6a00;
+}
+
+.border-portfolio-orange {
+  border-color: #ff6a00;
+}
+
+/* Custom glow effects matching the slides */
+.orange-glow {
+  box-shadow: 0 0 25px rgba(255, 106, 0, 0.4);
+}
+
+.orange-glow-sm {
+  box-shadow: 0 0 12px rgba(255, 106, 0, 0.35);
+}
+
+/* Hide scrollbar for clean carousel if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
